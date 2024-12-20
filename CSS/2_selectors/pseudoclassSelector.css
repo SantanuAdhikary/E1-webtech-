@@ -1,0 +1,39 @@
+
+
+.con1{
+    height: 350px;
+    width: 350px;
+    border: 3px solid red;
+}
+
+.con1 > .box{
+    height: 200px;
+    width: 200px;
+    border:2px solid green;
+}
+
+.con1 > .box > button{
+    background-color: aqua;
+}
+
+
+
+/* !  1. hover */
+
+.con1 > .box > button:hover{
+    background-color: red;
+    color:white;
+}
+
+/* ! 2. active */
+
+.con1 > .box > button:active{
+    background-color: green;
+}
+
+
+/* ! 3. nth child */
+
+.con2 > ul > li:nth-child(2n){
+    color: blue;
+}

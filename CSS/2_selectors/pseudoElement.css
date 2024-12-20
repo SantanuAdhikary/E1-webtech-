@@ -1,0 +1,60 @@
+
+header  h1{
+    color:red;
+}
+
+/* ! 1. first-letter */
+
+header > p::first-letter {
+    color:green;
+}
+
+
+/* ! 2. first-line */
+
+header > p::first-line{
+   background-color: lightsalmon;
+}
+
+/* ! 3. selection */
+
+header > p::selection{
+    background-color: black;
+    color:white;
+}
+
+
+/* ! 4. marker  */
+
+main > ul > li::marker
+{
+    color:green;
+}
+
+/* ! 5. before */
+
+header > h1::before{
+    content: "*";
+    color:green;
+}
+
+/* ! 6. after */
+
+header > h1::after{
+    content: "!";
+    color:brown
+}
+
+
+
+/* !  attribute selector */
+
+section > a[target="_blank"]{
+    color:red;
+}
+
+
+input[type="text"]
+{
+    background-color: aqua;
+}
