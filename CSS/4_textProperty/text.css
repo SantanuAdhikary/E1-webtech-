@@ -1,0 +1,59 @@
+
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.con1 > h1{
+    color:red;
+    text-transform: capitalize;
+    text-align: center;
+    letter-spacing: 5px;
+    text-shadow: -3px -3px 2px black;
+}
+
+
+.con1 > p{
+    text-align: justify;
+    text-indent: 30px;
+    letter-spacing: 2px;
+    line-height: 20px;
+}
+
+.con1 > ol > li:nth-child(1)
+{
+    color:red;
+    font-size: 20px;
+     
+    text-decoration: underline wavy green;
+    
+}
+
+
+a[target="_blank"]
+{
+    text-decoration: none;
+}
+
+
+.con1 > ol > li:nth-child(2)
+{
+    word-spacing: 5px;
+}
+
+
+.con1 > ol > li{
+    font-weight: bold;
+}
+
+
+.con1 > p::first-letter{
+    font-size: 30px;
+    font-weight: bold;
+    color:brown
+}
+
+
+ span{
+    text-decoration: underline dotted green;
+    color:blue
+}
