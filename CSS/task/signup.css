@@ -1,0 +1,86 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.outer{
+    height: 100vh;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner{
+    width: 400px;
+    background-color: white;
+    padding: 20px 40px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.7);
+}
+
+.outer > .inner > h1{
+    text-transform: uppercase;
+    letter-spacing: 2px ;
+    margin-bottom: 10px;
+}
+
+.outer > .inner > #p1{
+    font-size: 19px;
+    font-style: italic;
+    color:#666;
+    margin-bottom: 6px;
+}
+
+.inner > form > label{
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.inner > form > input{
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 6px;
+}
+
+.inner > form > button{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 20px;
+    background-color: #0866ff;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.inner > form > button:hover{
+    background-color: #084bb6;
+}
+
+.footer > p{
+    display: inline;
+}
+
+.footer > p:nth-child(1)
+{
+    font-size: 20px;
+    color: #666;
+    margin-right: 10px;
+}
+
+.footer > p:nth-child(2)
+{
+    color: #0866ff;
+    cursor: pointer;
+}

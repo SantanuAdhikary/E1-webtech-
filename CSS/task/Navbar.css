@@ -1,0 +1,79 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.nav{
+    background-color: antiquewhite;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+h2{
+    /* border: 2px solid red; */
+}
+
+ul{
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: center
+}
+
+
+.nav > ul > li{
+    margin-left: 10px;
+    list-style: none;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.nav > ul > li:hover{
+    color: #666;
+    text-decoration: underline;
+}
+
+span{
+    color:red;
+    font-style: italic;
+}
+
+
+.buttons > button:nth-child(1)
+{
+    padding: 10px 13px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #0866ff;
+    color:white;
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+
+.buttons > button:nth-child(2)
+{
+    padding: 10px 13px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color:#42b72a;
+    color:white;
+    margin-left: 10px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+
+
+.buttons > button:nth-child(2):hover{
+    background-color:#359322 ;
+}
+.buttons > button:nth-child(1):hover{
+    background-color: #0953ca; ;
+}

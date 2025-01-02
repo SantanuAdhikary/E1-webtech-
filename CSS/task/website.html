@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website using flex</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .nav{
+            height: 70px;
+            background-color: black;
+            color:white;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .nav > ul{
+            display: flex;
+        }
+
+        .nav >ul>li{
+            list-style: none;
+            margin-left: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .nav >ul>li:hover{
+            color:#666;
+            text-decoration: underline;
+            text-decoration-color: orangered;
+        }
+
+        .section{
+            height: 250px;
+            background-color: antiquewhite;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+
+        .section > h1{
+            text-transform: capitalize;
+            letter-spacing: 2px;
+            text-shadow: 2px 3px 1px red;
+        }
+
+        .section > p{
+            font-size: 20px;
+            font-style: italic;
+            color:#666;
+        }
+
+        .section > button{
+            padding: 20px 35px;
+            border-radius: 15px;
+            font-weight: bold;
+            background-color: cadetblue;
+            border: 1px solid #ccc;
+            color:white;
+            cursor: pointer;
+        }
+
+        .main{
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .main > .card{
+            height: 300px;
+            width: 300px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="nav">
+
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact Us</li>
+        </ul>
+
+    </div>
+    <div class="section">
+
+        <h1> welcome to my website</h1>
+        <p> Lorem ipsum dolor sit amet.</p>
+        <button>get started</button>
+
+    </div>
+    <div class="main">
+
+        <div class="card">
+            
+
+        </div>
+        <div class="card">
+            
+
+        </div>
+        <div class="card">
+            
+
+        </div>
+
+    </div>
+</body>
+</html>
