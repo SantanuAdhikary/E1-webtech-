@@ -1,0 +1,260 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice html </title>
+
+    <style>
+       h2{
+         color:green;
+       }
+    </style>
+
+    <link rel="stylesheet" href="./practice2.css">
+</head>
+<body>
+
+
+    <h1 style="color:red"> this is heading1</h1>
+    <h2> this is heading2</h2>
+    <h3> this is heading3</h3>
+    <h4> this is heading4</h4>
+    <h5> this is heading5</h5>
+    <h6> this is heading6</h6>
+
+
+    <p> this is para1</p>
+
+    <p> hello <br> how arey you?</p>
+
+    <hr>
+
+
+    <h1> how to add images</h1>
+
+     <img src="https://images.pexels.com/photos/585759/pexels-photo-585759.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="sun image" height="200">
+
+     <img src="./images/thor.jpeg" alt="thor image" width="400">
+
+     <h1> how to add audio</h1>
+
+     <audio src="./images/despacito.mp3" controls autoplay muted loop></audio>
+
+     <h1> how to add video</h1>
+
+     <video src="./images/bahubali.mp4" controls height="200" poster="./images/thor.jpeg"></video>
+
+
+     <iframe src="https://en.wikipedia.org/wiki/Thor" frameborder="0" width="500" height="500"></iframe>
+
+
+     <h1> how to add map</h1>
+
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.776766621145!2d80.20752337442899!3d13.049876613158599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5266e9de03452f%3A0x595d793b70b1e8f!2sQSpiders%20Vadapalani!5e0!3m2!1sen!2sin!4v1735904387551!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+ 
+
+
+
+     <h1> marquee tag </h1>
+
+
+     <marquee behavior="alternate" direction="right" scrollamount="40">
+
+        <h1> i am marquee tag </h1>
+     </marquee>
+
+
+     <marquee behavior="" direction="" scrollamount="20" >
+        <img src="https://media1.giphy.com/media/NqYpeCjGW4KEGE7Qir/giphy.gif" alt="" height="200">
+
+        <img src="https://media1.giphy.com/media/fstV57yumJ3dMUaYPr/giphy.gif?cid=6c09b9521nlq04b15710j0anm4dr50cpb61d7irg1d1mfs3r&ep=v1_stickers_search&rid=giphy.gif&ct=s" alt="" height="200">
+     </marquee>
+
+     <h1>  anchor tag </h1>
+
+
+     <a href="https://www.facebook.com/" title="santanu">goto facebook</a>
+     <a href="https://www.facebook.com/" target="_blank">goto facebook</a>
+
+
+     <h1> elements </h1>
+
+
+
+     <h1> List </h1>
+
+     <h2> ordered list</h2>
+
+     <ol type="I" reversed>
+        <li> hello</li>
+        <li> hi</li>
+        <li> bye</li>
+     </ol>
+
+     <ol type="a" start="5">
+        <li> bye</li>
+        <li> hello</li>
+        <li> how are you</li>
+     </ol>
+
+     <h2> unordered list</h2>
+
+     <ul type="square">
+        <li>squid games</li>
+        <li>lucifer</li>
+        <li>money heist</li>
+     </ul>
+
+     <h2> description list</h2>
+
+     <dl>
+        <dt> html</dt>
+        <dd> hyper text markup language</dd>
+     </dl>
+
+
+
+     <h1> how to create table </h1>
+
+
+     <table border="1" width="400" cellspacing="10" cellpadding="20">
+         <tr>
+            <th> eid</th>
+            <th>ename</th>
+            <th>sal</th>
+         </tr>
+
+         <tr>
+            <td>1</td>
+            <td>A</td>
+            <td>100</td>
+         </tr>
+         <tr>
+            <td>2</td>
+            <td>B</td>
+            <td>200</td>
+         </tr>
+         <tr>
+            <td>3</td>
+            <td>c</td>
+            <td>200</td>
+         </tr>
+     </table>
+
+
+
+     <table border="1" width="600">
+
+        <caption> student table</caption>
+
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+
+        <tr>
+            <td colspan="2">5</td>
+            <td colspan="2">6</td>
+        </tr>
+
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td rowspan="2">10</td>
+        </tr>
+
+        <tr>
+            <td colspan="2">11</td>
+            <td>12</td>
+        </tr>
+
+     </table>
+
+
+
+     <h1> how to create form </h1>
+
+
+     <form action="">
+
+      <fieldset>
+
+         <legend> user information</legend>
+
+         
+      <label for="sname">student name</label>
+      <input type="text" placeholder="enter your name" name="sname" id="sname" >     <br><br>
+
+      <label for="email">email</label>
+      <input type="email" name="semail" id="email">  <br><br>
+
+      <label for="">password</label>
+      <input type="password" name="pass">  <br><br>
+
+
+      <label for="">subjects</label>
+      <input type="checkbox" name="sub1" id="" value="html">  HTML
+      <input type="checkbox" name="sub2" id="" value="css"> CSS
+      <input type="checkbox" name="sub3" id="" value="python"> JS
+
+
+      <br><br>
+
+
+
+      <label for="">gender</label>
+
+      <input type="radio" name="gender" id="" value="male"> Male
+      <input type="radio" name="gender" id="" value="female"> Female
+      <input type="radio" name="gender" id="" value="others"> Others
+
+      <br><br>
+
+
+      <label for="">subjects</label> <br>
+
+      <select name="subject" id="">
+
+         <option value="forntend">forntend</option>
+         <option value="backend">backend</option>
+         <option value="fullstack">fullstack</option>
+      </select>
+
+      <br><br>
+
+
+      <label for="add">address</label><br>
+
+      <textarea name="address" id="add" cols="50" rows="20"></textarea>
+       <br><br>
+      <button> signup</button>
+
+      </fieldset>
+
+     </form>
+
+
+     <div class="container">
+        <h1> i am container1</h1>
+
+        <div class="box">
+         <h1> hello</h1>
+        </div>
+
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis repellat consequatur iste natus, deleniti cupiditate expedita aut omnis magni rem!</p>
+
+        <h1> hi</h1>
+
+        <button>hello</button>
+        <button>hi</button>
+     </div>
+
+
+
+</body>
+</html>

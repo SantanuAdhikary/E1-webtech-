@@ -1,0 +1,25 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container1{
+    height: 200px;
+    width: 200px;
+    border: 10px solid red;
+    padding: 10px  15px;
+    margin-bottom: 20px;
+}
+.container2{
+    height: 200px;
+    width: 200px;
+    border: 10px solid black;
+    border-radius: 10px;
+}
+
+
+.container2 > h2{
+    margin-bottom: 10px;
+}
