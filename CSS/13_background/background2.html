@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background2</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin:0;
+            box-sizing: border-box;
+        }
+
+        .section{
+            height: 100vh;
+            /* background-color: aqua; */
+            background-image: url("https://images.pexels.com/photos/189349/pexels-photo-189349.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap:10px;
+
+            background-attachment: fixed;  
+            cursor: pointer;   
+        }
+
+        .section > h1{
+            text-transform: uppercase;
+            font-size: 45px;
+            letter-spacing: 2px;
+            color:white;
+            text-shadow: 2px 2px 2px black;
+        }
+        .section > p{
+            text-transform: uppercase;
+            font-size: 25px;
+            letter-spacing: 2px;
+            color:white;
+            text-shadow: 2px 2px 2px black;
+        }
+        
+        #section2{
+            background-image: url('https://images.pexels.com/photos/33545/sunrise-phu-quoc-island-ocean.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+        }
+        #section3{
+            background-image: url('https://images.pexels.com/photos/235990/pexels-photo-235990.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+        }
+        #section4{
+            background-image: url('https://images.pexels.com/photos/262325/pexels-photo-262325.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+        }
+
+       ::-webkit-scrollbar{
+        display: none;
+       }
+    </style>
+</head>
+<body>
+    
+
+    <div class="section" id="section1">
+
+
+        <h1> this is section1</h1>
+        <p> this is paragraph1</p>
+
+    </div>
+    <div class="section" id="section2">
+
+
+        <h1> this is section 2</h1>
+        <p> this is paragraph 2</p>
+
+    </div>
+    <div class="section" id="section3">
+
+
+        <h1> this is section 3</h1>
+        <p> this is paragraph 3</p>
+
+    </div>
+    <div class="section" id="sectio4">
+
+
+        <h1> this is section 4</h1>
+        <p> this is paragraph 4</p>
+     
+
+    </div>
+</body>
+</html>

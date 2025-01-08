@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.outer{
+    height: 100vh;
+
+    background-color: antiquewhite;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.outer > .inner >h1{
+    color:white;
+    text-shadow: 2px 2px 2px red;
+    letter-spacing: 2px;
+}
+
+.outer > .inner{
+    height: 400px;
+    width: 600px;
+    background-color: white;
+
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1EdaVAtRcpMSIvrK2qmO_9xaS4Ex5t7xuKA&s");
+    background-repeat: no-repeat;
+
+    background-position: center;
+
+    background-size: cover;
+
+
+    border-radius: 20px;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
