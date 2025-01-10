@@ -1,0 +1,158 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.outer{
+    height: 100vh;
+    background-color: #212121;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.outer > .left{
+    height: 300px;
+    width: 300px;
+    border: 3px solid white;
+}
+
+
+.left > .box{
+    height: 100px;
+    width: 100px;
+    border: 2px solid red;
+  /* animation: moving 1.5s ease-in  infinite alternate; */
+  animation: total_rotate 1.5s ease-in  infinite alternate;
+
+}
+
+
+
+@keyframes moving {
+    from{
+        transform: translate(0,0);
+        background-color: red;
+    }
+    to{
+        transform: translate(200px,0);
+        background-color: green;
+    }
+}
+
+
+
+
+
+@keyframes total_rotate {
+    
+    0%{
+        transform: translate(0,0);
+        background-color: red;
+    }
+    25%{
+        transform: translate(200px,0);
+        background-color: green;
+    }
+    50%{
+        transform: translate(200px,200px);
+        background-color: aqua;
+    }
+    75%{
+        transform: translate(0,200px);
+        background-color: white;
+    }
+}
+
+
+.container1{
+    height: 250px;
+    width: 250px;
+    border: 3px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container1 > .box{
+    height: 100px;
+    width: 100px;
+    border-top: 3px solid green;
+    border-radius: 50%;
+
+    animation:circle_rotate 1s linear infinite ;
+}
+
+
+
+@keyframes circle_rotate {
+    from{
+         transform: rotate(0deg);
+    }
+    to{
+  transform: rotate(360deg);
+    }
+}
+
+
+.container2{
+    height: 250px;
+    width: 250px;
+    border: 2px solid white;
+    border-radius: 50%;
+    animation:circle_rotate 1s linear infinite ;
+}
+
+.container2 > .box{
+    height: 100px;
+    width: 100px;
+    border: 2px solid white;
+    border-radius: 50%;
+    /* animation:circle_rotate 1s linear infinite ; */
+}
+
+
+.container3{
+    height: 300px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+
+}
+
+.dot{
+    height: 30px ;
+    width: 30px;
+    background-color: white;
+    border-radius: 50%;
+    animation: up_down 2s ease-in infinite alternate;
+}
+
+
+#dot2{
+    animation-delay: 0.1s;
+    background-color: red;
+}
+#dot3{
+    animation-delay: 0.2s;
+    background-color: green;
+}
+#dot4{
+    animation-delay: 0.3s;
+    background-color: blue;
+}
+
+@keyframes up_down {
+    from{
+
+        transform: translateY(-40px);
+
+    }
+    to{
+        transform: translateY(40px);
+    }
+}
