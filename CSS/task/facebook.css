@@ -1,0 +1,112 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.outer{
+    height: 100vh;
+    background-color: #f5f6f7;
+    display: flex;
+}
+
+.outer >.left{
+    
+    flex-basis: 58%;
+    /* border: 2px solid red; */
+    /* background-color: red; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px;
+    
+}
+.outer >.right{
+
+    /* border: 2px solid green; */
+    flex-basis: 42%;
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+
+    
+}
+
+.left > img{
+    width: 360px;
+}
+
+.left > p{
+    font-size: 28px;
+}
+
+form{
+
+    width: 349px;
+    background-color: white;
+    padding: 30px 15px;
+    border-radius: 10px;
+    box-shadow: 0 6px 8px rgba(0,0,0,0.4);
+}
+
+form > input{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 6px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+form > #btn1{
+    margin-top: 8px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #0866ff;
+    color:white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    cursor: pointer;
+    
+
+    &:hover{
+        background-color: #1457c2;
+    }
+}
+
+form > p {
+    text-align: center;
+    margin-bottom: 12px;
+    color:#0866ff;
+    cursor: pointer;
+
+}
+
+form > #btn2{
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #42b72a;
+    color:white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    cursor: pointer;
+
+    &:hover{
+        background-color: #339d1d; ;
+    }
+}
